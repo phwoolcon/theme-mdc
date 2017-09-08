@@ -17,5 +17,13 @@ return [
 //                'ShortClass' => Phwoolcon\ThemeMdl\Some\LongClassName::class,
             ],
         ],
+        'assets' => [
+            'material-components-web-css' => [
+                'material-components-web-0.20.0/material-components-web.css',
+            ],
+            'material-components-web-js' => [
+                'material-components-web-0.20.0/material-components-web.min.js',
+            ],
+        ],
     ],
 ];
