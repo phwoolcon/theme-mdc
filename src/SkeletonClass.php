@@ -1,6 +1,6 @@
 <?php
 
-namespace Phwoolcon\ThemeMdl;
+namespace Phwoolcon\ThemeMdc;
 
 class SkeletonClass
 {

@@ -1,28 +1,28 @@
 <?php
 
 return [
-    'phwoolcon/theme-mdl' => [
+    'phwoolcon/theme-mdc' => [
         'di' => [
             20 => 'di.php', // 20 stands for the loading sequence, bigger number will be loaded later
         ],
         'commands' => [
             // 20 stands for the loading sequence, bigger number will be loaded later
             20 => [
-//                'your:command' => Phwoolcon\ThemeMdl\Command\YourCommand::class,
+//                'your:command' => Phwoolcon\ThemeMdc\Command\YourCommand::class,
             ],
         ],
         'class_aliases' => [
             // 20 stands for the loading sequence, bigger number will be loaded later
             20 => [
-//                'ShortClass' => Phwoolcon\ThemeMdl\Some\LongClassName::class,
+//                'ShortClass' => Phwoolcon\ThemeMdc\Some\LongClassName::class,
             ],
         ],
         'assets' => [
-            'material-components-web-css' => [
-                'material-components-web-0.20.0/material-components-web.css',
+            'mdc-css' => [
+                'mdc-0.20.0/mdc.css',
             ],
-            'material-components-web-js' => [
-                'material-components-web-0.20.0/material-components-web.min.js',
+            'mdc-js' => [
+                'mdc-0.20.0/mdc.min.js',
             ],
         ],
     ],

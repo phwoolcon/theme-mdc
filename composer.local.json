@@ -1,11 +1,11 @@
 {
     "require": {
-        "phwoolcon/theme-mdl": "~1.0"
+        "phwoolcon/theme-mdc": "~1.0"
     },
     "phwoolcon-packages": [
         {
-            "name": "phwoolcon/theme-mdl",
-            "url": "git@github.com:phwoolcon/theme-mdl.git"
+            "name": "phwoolcon/theme-mdc",
+            "url": "git@github.com:phwoolcon/theme-mdc.git"
         }
     ]
 }

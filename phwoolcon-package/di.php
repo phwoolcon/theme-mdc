@@ -1,20 +1,20 @@
 <?php
 
 /*
- * Register theme-mdl components
+ * Register theme-mdc components
  */
 /*
-use Phwoolcon\ThemeMdl\ThemeMdlService;
+use Phwoolcon\ThemeMdc\ThemeMdcService;
 
-ThemeMdlService::register($di);
+ThemeMdcService::register($di);
 */
 
 /*
  * Make DI injections
  */
 /*
-use Phwoolcon\ThemeMdl\Model\User as ThemeMdlUser;
+use Phwoolcon\ThemeMdc\Model\User as ThemeMdcUser;
 use Phwoolcon\Model\User as PhwoolconUser;
 
-$di->set(PhwoolconUser::class, ThemeMdlUser::class);
+$di->set(PhwoolconUser::class, ThemeMdcUser::class);
 */

@@ -1,13 +1,13 @@
 {
-    "name": "phwoolcon/theme-mdl",
+    "name": "phwoolcon/theme-mdc",
     "type": "library",
     "description": "The Material Design Lite Theme for Phwoolcon",
     "keywords": [
         "phwoolcon",
-        "theme-mdl",
+        "theme-mdc",
         "material-design-lite"
     ],
-    "homepage": "https://github.com/phwoolcon/theme-mdl",
+    "homepage": "https://github.com/phwoolcon/theme-mdc",
     "license": "Apache-2.0",
     "authors": [
         {
@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Phwoolcon\\ThemeMdl\\": "src"
+            "Phwoolcon\\ThemeMdc\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Phwoolcon\\ThemeMdl\\": "tests"
+            "Phwoolcon\\ThemeMdc\\": "tests"
         }
     },
     "scripts": {
