@@ -4,10 +4,10 @@ return [
     'phwoolcon/theme-mdc' => [
         'assets' => [
             'mdc-css' => [
-                'mdc-0.20.0/mdc.css',
+                'material-components-web-0.20.0/material-components-web.min.css',
             ],
             'mdc-js' => [
-                'mdc-0.20.0/mdc.min.js',
+                'material-components-web-0.20.0/material-components-web.min.js',
             ],
         ],
     ],
