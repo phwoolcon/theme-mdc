@@ -2,6 +2,9 @@
 
 return [
     'phwoolcon/theme-mdc' => [
+        'di' => [
+            20 => 'widgets.php',
+        ],
         'assets' => [
             'mdc-css' => [
                 'normalize/normalize-7.0.0.min.css',
