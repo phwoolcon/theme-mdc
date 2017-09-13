@@ -2,7 +2,7 @@
  * Process menus
  */
 !function (d) {
-    d.addEventListener("click", function (e) {
+    function processMenus(e) {
         var target = event.target || event.srcElement, targetMenu, menuLink;
         /**
          * Pass menu click to link
@@ -24,5 +24,7 @@
                 menu.removeClass("mdc-simple-menu--open");
             });
         }
-    });
+    }
+
+    d.addEventListener(d.ontouchstart ? "touchend" : "click", processMenus);
 }(document);
