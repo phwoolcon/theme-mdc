@@ -1,0 +1,99 @@
+html, body{
+    height:100%;
+}
+html, body, .mdc-button, .mdc-card__supporting-text, .mdc-card__title, .mdc-card__title--large, .mdc-card__subtitle,
+.mdc-dialog__header__title, .mdc-dialog__body, .mdc-persistent-drawer .mdc-list-item,
+.mdc-permanent-drawer .mdc-list-item, .mdc-temporary-drawer .mdc-list-item,
+.mdc-form-field, .mdc-grid-tile__support-text, .mdc-list, .mdc-list-item__text__secondary, .mdc-list-group,
+.mdc-simple-menu .mdc-list-item, .mdc-select, .mdc-select__menu .mdc-list-item, .mdc-slider__pin-value-marker,
+.mdc-snackbar__text, .mdc-tab, .mdc-textfield__input, .mdc-toolbar__title,
+.mdc-toolbar--flexible-default-behavior .mdc-toolbar__title, .mdc-typography,
+.mdc-typography--display4, .mdc-typography--display3, .mdc-typography--display2, .mdc-typography--display1,
+.mdc-typography--headline, .mdc-typography--title, .mdc-typography--subheading2, .mdc-typography--subheading1,
+.mdc-typography--body2, .mdc-typography--body1, .mdc-typography--caption, .mdc-typography--button{
+    font-family:Noto Sans, Noto Sans CJK SC, PingFang SC, Hiragino Sans GB, Source Han Sans CN, STXihei,
+    Microsoft YaHei, Microsoft JhengHei, WenQuanYi Micro Hei, sans-serif;
+}
+.mdc-textfield__label{
+    bottom:15px;
+}
+.mdc-form-field--fullwidth{
+    margin-bottom:8px;
+}
+.mdc-form-field--fullwidth{
+    display:block;
+    width:100%;
+}
+.mdc-switch-label{
+    cursor:pointer;
+}
+.mdc-toolbar--light{
+    background-color:transparent;
+    color:rgba(0, 0, 0, .87);
+    color:var(--mdc-theme-text-primary-on-light, rgba(0, 0, 0, .87));
+}
+.mdc-snackbar{
+    z-index:99999;
+}
+.mdc-snackbar__text{
+    height:auto;
+}
+.mdc-toolbar-fixed-adjust{
+    margin-top:0;
+    padding-top:64px;
+}
+.mdc-toolbar--bottom{
+    background:#fff;
+    bottom:0;
+    top:auto;
+}
+@media (max-height:500px){
+    .mdc-toolbar--fixed{
+        position:static;
+    }
+    .mdc-toolbar-fixed-adjust{
+        padding-top:0;
+    }
+}
+a{
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased;
+    cursor:pointer;
+    font-size:.875rem;
+    line-height:1.25rem;
+}
+a, a:link, a:visited, a:hover, a:active{
+    color:rgba(0, 0, 0, .87);
+    color:var(--mdc-theme-text-primary-on-light, rgba(0, 0, 0, .87));
+}
+.v-spacer{
+    height:2em;
+}
+.clearfix:before,
+.clearfix:after{
+    display:table;
+    content:" ";
+}
+.clearfix:after{
+    clear:both;
+}
+.pull-right{
+    float:right !important;
+}
+.pull-left{
+    float:left !important;
+}
+.menu-link{
+    text-decoration:none;
+}
+.hidden{
+    display:none;
+}
+.no-select{
+    -webkit-touch-callout:none; /* iOS Safari */
+    -webkit-user-select:none; /* Safari */
+    -khtml-user-select:none; /* Konqueror HTML */
+    -moz-user-select:none; /* Firefox */
+    -ms-user-select:none; /* Internet Explorer/Edge */
+    user-select:none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}

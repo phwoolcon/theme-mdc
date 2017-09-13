@@ -9,6 +9,7 @@ return [
             'mdc-css' => [
                 'normalize/normalize-7.0.0.min.css',
                 'material-components-web-0.20.0/material-components-web.min.css',
+                'phwoolcon-mdc/mdc-fix.css',
             ],
             'mdc-js' => [
                 'material-components-web-0.20.0/material-components-web.min.js',
