@@ -13,6 +13,7 @@ return [
             ],
             'mdc-js' => [
                 'material-components-web-0.20.0/material-components-web.min.js',
+                'phwoolcon-mdc/mdc-fix.js',
             ],
         ],
     ],
