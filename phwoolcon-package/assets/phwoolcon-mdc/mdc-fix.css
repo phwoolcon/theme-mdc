@@ -11,7 +11,7 @@ html, body, .mdc-button, .mdc-card__supporting-text, .mdc-card__title, .mdc-card
 .mdc-typography--display4, .mdc-typography--display3, .mdc-typography--display2, .mdc-typography--display1,
 .mdc-typography--headline, .mdc-typography--title, .mdc-typography--subheading2, .mdc-typography--subheading1,
 .mdc-typography--body2, .mdc-typography--body1, .mdc-typography--caption, .mdc-typography--button{
-    font-family:Noto Sans, Noto Sans CJK SC, PingFang SC, Hiragino Sans GB, Source Han Sans CN, STXihei,
+    font-family:Noto Sans, Noto Sans CJK SC, PingFang SC, Hiragino Sans GB, Source Han Sans CN,
     Microsoft YaHei, Microsoft JhengHei, WenQuanYi Micro Hei, sans-serif;
 }
 .mdc-textfield__label{
