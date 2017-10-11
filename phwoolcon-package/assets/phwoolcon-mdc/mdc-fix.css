@@ -14,15 +14,15 @@ html, body, .mdc-button, .mdc-card__supporting-text, .mdc-card__title, .mdc-card
     font-family:Noto Sans, Noto Sans CJK SC, PingFang SC, Hiragino Sans GB, Source Han Sans CN,
     Microsoft YaHei, Microsoft JhengHei, WenQuanYi Micro Hei, sans-serif;
 }
-.mdc-textfield__label{
-    bottom:15px;
-}
-.mdc-form-field--fullwidth{
-    margin-bottom:8px;
+.mdc-fix-textfield--fullwidth{
+    width:100%;
 }
 .mdc-form-field--fullwidth{
     display:block;
     width:100%;
+}
+.mdc-textfield--upgraded:not(.mdc-textfield--fullwidth):not(.mdc-textfield--box){
+    margin-top:0;
 }
 .mdc-switch-label{
     cursor:pointer;
