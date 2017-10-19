@@ -27,4 +27,9 @@
     }
 
     d.addEventListener(d.ontouchstart ? "touchend" : "click", processMenus);
+
+    d.on && d.on(d.ontouchstart ? "touchend" : "click", ".mdc-textfield", function () {
+        var input = this.querySelector(".mdc-textfield__input");
+        input && input.focus()
+    })
 }(document);
