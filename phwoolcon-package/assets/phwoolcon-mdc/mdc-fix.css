@@ -32,6 +32,9 @@ html, body, .mdc-button, .mdc-card__supporting-text, .mdc-card__title, .mdc-card
     color:rgba(0, 0, 0, .87);
     color:var(--mdc-theme-text-primary-on-light, rgba(0, 0, 0, .87));
 }
+.mdc-toolbar--fixed{
+    z-index:10;
+}
 .mdc-snackbar{
     z-index:99999;
 }
@@ -68,6 +71,9 @@ a, a:link, a:visited, a:hover, a:active{
 }
 .v-spacer{
     height:2em;
+}
+.v-spacer-half{
+    height:1em;
 }
 .clearfix:before,
 .clearfix:after{
