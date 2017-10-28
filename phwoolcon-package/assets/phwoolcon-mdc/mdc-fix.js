@@ -3,7 +3,7 @@
  */
 !function (d) {
     function processMenus(e) {
-        var target = event.target || event.srcElement, targetMenu, menuLink;
+        var target = e.target || e.srcElement, targetMenu, menuLink;
         /**
          * Pass menu click to link
          */
