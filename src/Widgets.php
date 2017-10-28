@@ -15,14 +15,15 @@ class Widgets extends Widget
     public static function register(Di $di)
     {
         static::$di = $di;
-        Widget::define('mdcCheckbox', function ($parameters) {
-            static::checkRequiredParameters($parameters, ['id', 'label']);
-            $id = $parameters['id'];
-            $label = $parameters['label'];
-            $value = isset($parameters['value']) ?: '';
-            $checked = empty($parameters['checked']) ? 'checked' : '';
-            $name = empty($parameters['name']) ? '' : 'name="' . $parameters['name'] . '"';
-            return <<<HTML
+        Widget::define('mdcCheckbox', [static::class, 'mdcCheckbox']);
+    }
+
+    public static function mdcCheckbox($id, $label, array $htmlAttributes = [])
+    {
+        $value = isset($htmlAttributes['value']) ?: '';
+        $checked = empty($htmlAttributes['checked']) ? '' : 'checked';
+        $name = empty($htmlAttributes['name']) ? '' : 'name="' . $htmlAttributes['name'] . '"';
+        return <<<HTML
 <div class="mdc-form-field">
     <div class="mdc-checkbox">
         <input type="checkbox" id="{$id}" {$name} class="mdc-checkbox__native-control" value="{$value}" {$checked}>
@@ -37,6 +38,5 @@ class Widgets extends Widget
     <label for="{$id}" id="{$id}-label">{$label}</label>
 </div>
 HTML;
-        });
     }
 }
