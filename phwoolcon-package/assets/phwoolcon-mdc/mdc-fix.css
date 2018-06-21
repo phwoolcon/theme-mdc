@@ -58,6 +58,12 @@ html, body, .mdc-button, .mdc-card__supporting-text, .mdc-card__title, .mdc-card
         padding-top:0;
     }
 }
+@media (max-width: 599px){
+    .mdc-toolbar-fixed-adjust{
+        margin-top:0;
+        padding-top:56px;
+    }
+}
 a{
     -moz-osx-font-smoothing:grayscale;
     -webkit-font-smoothing:antialiased;
