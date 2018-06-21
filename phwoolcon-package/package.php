@@ -12,6 +12,10 @@ return [
                 'phwoolcon-mdc/mdc-fix.css',
                 'material-icons/material-icons.css',
             ],
+            'alternative-material-icons-css' => [
+                'normalize/normalize-7.0.0.min.css',
+                'alternative-material-icons/css/materialdesignicons.css',
+            ],
             'mdc-js'  => [
                 'material-components-web-0.20.0/material-components-web.min.js',
                 'phwoolcon-mdc/mdc-fix.js',
