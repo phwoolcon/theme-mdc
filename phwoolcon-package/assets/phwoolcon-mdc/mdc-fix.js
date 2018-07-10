@@ -7,29 +7,31 @@
         /**
          * Pass menu click to link
          */
-        if (target.hasClass("mdc-simple-menu-item") && (menuLink = target.querySelector(".menu-link"))) {
+        if (target.hasClass('mdc-simple-menu-item') && (menuLink = target.querySelector('.menu-link'))) {
             menuLink.click();
         }
 
         /**
          * Toggle menu
          */
-        if (target.hasClass("menu-toggler") &&
-            target.getAttribute("data-target-menu") &&
-            (targetMenu = d.getElementById(target.getAttribute("data-target-menu")))
+        if (target.hasClass('menu-toggler') &&
+            target.getAttribute('data-target-menu') &&
+            (targetMenu = d.getElementById(target.getAttribute('data-target-menu')))
         ) {
-            targetMenu.toggleClass("mdc-simple-menu--open");
+            targetMenu.toggleClass('mdc-simple-menu--open');
         } else {
-            [].forEach.call(d.querySelectorAll(".mdc-simple-menu"), function (menu) {
-                menu.removeClass("mdc-simple-menu--open");
+            [].forEach.call(d.querySelectorAll('.mdc-simple-menu'), function (menu) {
+                menu.removeClass('mdc-simple-menu--open');
             });
         }
     }
 
-    d.addEventListener(d.ontouchstart ? "touchend" : "click", processMenus);
+    var click = 'ontouchstart' in d.documentElement ? 'touchend' : 'click';
 
-    d.on && d.on(d.ontouchstart ? "touchend" : "click", ".mdc-textfield", function () {
-        var input = this.querySelector(".mdc-textfield__input");
+    d.addEventListener(click, processMenus);
+
+    d.on && d.on(click, '.mdc-textfield', function () {
+        var input = this.querySelector('.mdc-textfield__input');
         input && input.focus()
     })
 }(document);
